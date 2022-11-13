@@ -1,6 +1,6 @@
 # Character Bio Build HW
 
-All about sPONGEbOB's character lineup!!
+All about SpongeBob's character lineup!!
 
 ## Contributing
 
