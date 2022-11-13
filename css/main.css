@@ -22,9 +22,9 @@ header {
     text-align: center;
 }
 
-#main-logo { width: 300px; padding: 10px 0; }
+#main-logo {width: 300px; padding: 10px 0; }
 
-#character-nav  {
+#character_nav  {
     text-align: center;
     background-color: #343030;
     background-image: url('../img/bikini_buttom.png');
@@ -34,7 +34,7 @@ header {
     background-blend-mode: multiply;
 }
 
-.characters { list-style-type: none; }
+.characters {list-style-type: none; }
 
 .characters li {
     position: relative;
@@ -44,7 +44,7 @@ header {
 
     background-color: black;
     text-align: left;
-    overflow: hidden;
+    overflow: pointer;
 }
 
 .characters li h5 {
@@ -54,9 +54,10 @@ header {
     z-index: 500;
 }
 
-.characters li img {text-decoration: none;}
+.characters li a{text-decoration: none;}
 
-.bob-bumper {
+
+.bob_bumper {
     height: 6px; background-color: #ffe751;
     width: 100%;
     height: 6px;
@@ -64,7 +65,7 @@ header {
     position: absolute;
 }
 
-.patrick-bumper {
+.patrick_bumper {
     height: 6px; background-color: #f0878c;
     width: 100%;
     height: 6px;
@@ -72,7 +73,7 @@ header {
     position: absolute;
 }
 
-.sandy-bumper {
+.sandy_bumper {
     height: 6px; background-color: #e68842;
     width: 100%;
     height: 6px;
@@ -80,7 +81,7 @@ header {
     position: absolute;
 }
 
-.gary-bumper {
+.gary_bumper {
     height: 6px; background-color: #86cbec;
     width: 100%;
     height: 6px;
@@ -88,7 +89,7 @@ header {
     position: absolute;
 }
 
-.krabs-bumper {
+.krabs_bumper {
     height: 6px; background-color: #de3b28;
     width: 100%;
     height: 6px;
@@ -96,7 +97,7 @@ header {
     position: absolute;
 }
 
-.squidwards-bumper {
+.squidward_bumper {
     height: 6px; background-color: #b5d7c9;
     width: 100%;
     height: 6px;
@@ -104,7 +105,13 @@ header {
     position: absolute;
 }
 
-.characters li:hover .red_bumper { height: 70px; }
+.characters li:hover .bob_bumper {height: 70px; }
+.characters li:hover .patrick_bumper { height: 70px; }
+.characters li:hover .sandy_bumper { height: 70px; }
+.characters li:hover .gary_bumper {height: 70px; }
+.characters li:hover .krabs_bumper { height: 70px; }
+.characters li:hover .squidward_bumper { height: 70px; }
+
 
 article {padding: 20px; }
 
@@ -115,7 +122,7 @@ article h3  {
 }
 
 article p {
-    width: 70%;
+    width: 80%;
     font-size: 20px;
     line-height: 1.2;
     text-align: center;
@@ -143,7 +150,7 @@ article p {
 
 footer {
     color: white;
-    padding: 20 px 0;
+    padding: 20px 0;
     text-align: center;
 }
 
@@ -165,17 +172,20 @@ footer {
     left: 0;
 
     background-color: rgba(0, 0, 0, 0.85);
-    background-image: url('../img/');
+    background-image: url('../img/Bob_LB_Bg.png');
     background-repeat: no-repeat;
 
-    background-position: 40px bottom;
+    background-position: 75px 70px;
     background-size: 55vh;
+    z-index: 5000;
     display: none;
 }
 
-.lb_close { 
+#lightbox2 { background-image: url('../img/Patrick_LB_Bg.png'); }
+
+.close_btn { 
     color: white;
-    font-size: 2em;
+    font-size: 3em;
     
     text-decoration: none; 
 
@@ -185,15 +195,15 @@ footer {
     font-weight: bolder
 }
 
-.lb_close:hover { opacity: 0.5; }
+.close_btn:hover {opacity: 0.5; color: red; }
 
-.lightbox article { /* text next to C.A photo */
+.lightbox article { /* text next to photo */
     width: 55%;
     margin-left: 40%;
     padding-top: 50px ;
 }
 
-.lb_text, .lb_heading { text-align: left;}
+.lb_text, .lb_heading { text-align: left; }
 
 .lb_text { /* this is a class in html */
     line-height: 1.6 !important;
