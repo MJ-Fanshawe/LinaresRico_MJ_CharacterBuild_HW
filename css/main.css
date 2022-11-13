@@ -175,13 +175,13 @@ footer {
     background-image: url('../img/Bob_LB_Bg.png');
     background-repeat: no-repeat;
 
-    background-position: 75px 70px;
+    background-position: 55px 70px;
     background-size: 55vh;
     z-index: 5000;
     display: none;
 }
 
-#lightbox2 { background-image: url('../img/Patrick_LB_Bg.png'); }
+#lightbox2 {background-image: url('../img/Patrick_LB_Bg.png'); }
 
 .close_btn { 
     color: white;
