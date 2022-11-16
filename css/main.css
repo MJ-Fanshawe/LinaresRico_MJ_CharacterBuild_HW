@@ -181,17 +181,22 @@ footer {
     display: none;
 }
 
-#lightbox2 {background-image: url('../img/Patrick_LB_Bg.png'); }
+#lightbox2 { background-image: url('../img/Patrick_LB_Bg.png'); }
+#lightbox3 { background-image: url('../img/Sandy_LB_Bg.png'); }
+#lightbox4 { background-image: url('../img/Gary_LB_Bg.png'); }
+#lightbox5 { background-image: url('../img/Krabs_LB_Bg.png'); }
+#lightbox6 { background-image: url('../img/Squid_LB_Bg.png'); }
 
 .close_btn { 
+    position: relative;
+    top: 20px;
+    left: 96%;
+
     color: white;
     font-size: 3em;
     
     text-decoration: none; 
 
-    position: relative;
-    top: 20px;
-    left: 96%;
     font-weight: bolder
 }
 
